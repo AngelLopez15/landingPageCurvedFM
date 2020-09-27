@@ -6,8 +6,16 @@
     justify-content: space-between;
     height: 50px;
     align-items: center;
+
+    @include laptop {
+      padding: 2rem 4rem;
+    }
+
     &__logo{
       height: 20px;
+      @include laptop {
+        height: 35px;
+      }
     }
 
     .btn{
@@ -17,21 +25,41 @@
       color: $primary-color;
       padding: .5rem 1.5rem;
     }
+
+    .btn:hover{
+      @include laptop{
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+
   }
+
 }
 
 .banner{
   text-align: center;
   padding: 30vmin 0;
 
+  @include laptop {
+    padding: 20vmin 0;
+  }
+
   &__title{
     color:$dark-color;
     font-family: $main-title;
+    @include laptop {
+      font-size: 2.9rem;
+    }
   }
   
   p{
     font-weight: $font-regular;
     padding: 0 1rem;
+    @include laptop {
+      padding: 0 26rem;
+      font-weight: $font-semi-bold;
+    }
   }
 
   .btn{
@@ -43,5 +71,11 @@
     width: 230px;
     color: white;
     box-shadow: 0 2.5px 5px 0 $dark-color;
+    @include laptop {
+      padding: 1.5rem 0;
+      width: 300px;
+    }
   }
+
+
 }

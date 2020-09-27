@@ -1,25 +1,31 @@
 block footer
   footer.footer
     .footer__imgen-top
-      img(src="./images/bg-footer-top-mobile.svg", alt="background imagen")
+      img(src="./images/bg-footer-top-desktop.svg", alt="background imagen")
+      //- picture
+        //- source(media="(min-width: 375px)", srcset="./images/bg-footer-top-mobile.svg")
+        //- source(media="(min-width: 1440px)", srcset="./images/bg-footer-top-desktop.svg")
+        //- img(src="./images/bg-footer-top-mobile.svg", alt="background imagen")
     section.footer__info
-      h2.footer__title Newsletter
-      p.footer__text To recieve tips on how to grow your community, sig up to our weekly newsletter. We´ll never send you spam or pass on your email address
-      form.footer__form-subscribe
-        //- label(for="email").footer__form-subscribe-label Email
-        input(type="email", name="email")#email.footer__form-subscribe-input
-        input(type="submit", name="sumbit", value="Subscribe").btn.footer__form-subscribe-submit
-      .footer__description
-        img(src="./images/logo.svg", alt="logo").footer__description-img
-        p.footer__description-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-      .footer__contact
-        ul.footer__contact-list
-          li 
-            img(src="./images/icon-phone.svg", alt="icono phone").icon 
-            | Phone: +1-543-123-4567
-          li 
-            img(src="./images/icon-email.svg", alt="icono email").icon 
-            | example@company.com
-        <i class="icon fab fa-facebook-square"></i>
-        <i class="icon fab fa-instagram"></i>
-        <i class="icon fab fa-twitter-square"></i>
+      .footer__info-1
+        h2.footer__title Newsletter
+        p.footer__text To recieve tips on how to grow your community, sig up to our weekly newsletter. We´ll never send you spam or pass on your email address
+        form.footer__form-subscribe
+          //- label(for="email").footer__form-subscribe-label Email
+          input(type="email", name="email")#email.footer__form-subscribe-input
+          input(type="submit", name="sumbit", value="Subscribe").btn.footer__form-subscribe-submit
+      .footer__info-2
+        .footer__description
+          img(src="./images/logofooter.svg", alt="logo")
+          p.footer__description-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+        .footer__contact
+          ul.footer__contact-list
+            li 
+              img(src="./images/icon-phone.svg", alt="icono phone").icon 
+              | Phone: +1-543-123-4567
+            li 
+              img(src="./images/icon-email.svg", alt="icono email").icon 
+              | example@company.com
+          <i class="icon fab fa-facebook-square"></i>
+          <i class="icon fab fa-instagram"></i>
+          <i class="icon fab fa-twitter-square"></i>

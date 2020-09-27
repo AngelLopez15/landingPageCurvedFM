@@ -3,6 +3,14 @@
   margin-bottom: 2.5rem;
   padding: 0 .5rem;
 
+  &__community{
+
+    @include laptop{
+      display: flex;
+      justify-content: space-around;    
+    }
+  }
+
   &__image-browser{
     margin-bottom: 5rem;
   }
@@ -16,7 +24,7 @@
   }
 
   &__community--text{
-    color:#aaa;
+    color:#aaa
   }
 
   &__community--data{
@@ -25,6 +33,7 @@
     font-weight: $font-bold;
     display: block;
   }
+
 }
 
 .description{
@@ -35,7 +44,9 @@
   &__imagen-grow img,
   &__imagen-bottom-1 img,
   &__imagen-flowing img,
-  &__imagen-users img{
+  &__imagen-users img,
+  &__imagen-top-2 img,
+  &__imagen-bottom-2 img{
     max-width: 100%;
   }
   
@@ -62,6 +73,10 @@
     background-color: $ligth-color;
     margin-top: -2px;
     padding-bottom: 1.5rem;
+    @include laptop{
+      font-size: 2rem;
+      text-align: start;
+    }
   }
   
 
@@ -69,20 +84,87 @@
     margin-top: -21px;
     background-color: $ligth-color;
     font-weight: $font-semi-bold;
+    @include laptop{
+      text-align: start;
+    }
+  }
+
+  &__imagen-grow{
+    @include laptop {
+      display: flex;
+      padding: 3rem 12rem;
+      align-items: center;
+    }
+  }
+
+  &__imagen-grow-1{
+    @include laptop{
+      order: 2;
+    }
+  }
+
+  &__imagen-grow-2{
+    @include laptop{
+      order: 1;
+    }
   }
 
   &__imagen-flowing{
     padding-top: 6rem;
     padding-bottom: 3rem;
+    @include laptop {
+      padding: 8rem 4.5rem;
+      display: flex;
+      align-items: center;
+    }  
+  }
+
+  &__title-flowing{
+    @include laptop{
+      font-size: 2rem;
+      text-align: start
+    }
   }
 
   &__text-flowing{
     font-weight: $font-regular;
     padding: 0 .5rem;
+    @include laptop{
+      font-weight: $font-semi-bold;
+      text-align: start
+    }
+  }
+
+  &__imagen-users{
+    @include laptop{
+      padding: 5rem 6rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title-users{
+    @include laptop{
+      text-align: start;
+      font-size: 2rem;
+    }
   }
 
   &__text-users{
     padding: 0 1rem;
+    @include laptop{
+      padding: 0 7rem 0 0;
+      text-align: start;
+      font-weight: $font-semi-bold;
+    }
+  }
+
+  &__imagen-users-1{
+    order: 2;
+  }
+
+  &__imagen-users-2{
+    order: 1;
   }
 
 }
@@ -90,6 +172,16 @@
 .started{
   text-align: center;
   padding-bottom: 8rem;
+
+  @include laptop{
+    padding: 10rem 0;
+  }
+
+  .started__title{
+    @include laptop{
+      font-size: 2rem;
+    } 
+  }
 
   .btn{
     @include button;
@@ -100,6 +192,10 @@
     width: 230px;
     color: white;
     box-shadow: 0 2.5px 5px 0 $dark-color;
+    @include laptop{
+      padding: 1.3rem;
+      width: 300px;
+    }
   }
 
 }
