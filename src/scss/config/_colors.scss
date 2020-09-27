@@ -1,0 +1,9 @@
+:root{
+  --primary-color:hsl(322, 100%, 66%);
+  --dark-color:hsl(192, 100%, 9%);
+  --ligth-color:hsl(207, 100%, 98%);
+}
+
+$primary-color:var(--primary-color);
+$dark-color:var(--dark-color);
+$ligth-color:var(--ligth-color);

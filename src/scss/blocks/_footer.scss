@@ -1,0 +1,65 @@
+.footer{
+
+  color: white;
+  
+  .icon{
+    margin-right: .5rem;
+    font-size: 1.5rem;
+  }
+
+  .btn{
+    border-radius: 5px;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    padding: .5rem 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__imgen-top img{
+    max-width: 100%;
+  }
+  
+  &__info{
+    padding:3rem 1rem 0;
+    background-color: $dark-color;
+    margin-top: -9px;
+  }
+
+  &__title{
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    font-weight: $font-semi-bold;
+  }
+
+  &__form-subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__form-subscribe-input{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    padding: .5rem 0;
+    border-radius: 5px;
+  }
+  
+  // &__description-img {
+  //   background-color: aliceblue;
+  // }
+  &__contact{
+    padding-bottom: 2rem;
+  }
+
+  &__contact-list{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+}

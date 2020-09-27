@@ -1,0 +1,16 @@
+// guia de estilos
+@import 'config/colors';
+@import 'config/fonts';
+
+// mixins
+@import 'mixins/breakpoints';
+@import 'mixins/buttons';
+
+// Estilos base
+@import 'base/normalize';
+@import 'base/base';
+
+// bloques
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/footer';

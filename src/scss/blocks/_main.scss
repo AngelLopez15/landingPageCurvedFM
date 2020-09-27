@@ -1,0 +1,105 @@
+.statistics{
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding: 0 .5rem;
+
+  &__image-browser{
+    margin-bottom: 5rem;
+  }
+
+  &__image-browser img{
+    max-width: 100%;
+  }
+
+  &__community-image{
+    margin-right: 10rem;
+  }
+
+  &__community--text{
+    color:#aaa;
+  }
+
+  &__community--data{
+    color: $dark-color;
+    font-size: 5.5rem;
+    font-weight: $font-bold;
+    display: block;
+  }
+}
+
+.description{
+
+  text-align: center;
+  
+  &__imagen-top-1 img,
+  &__imagen-grow img,
+  &__imagen-bottom-1 img,
+  &__imagen-flowing img,
+  &__imagen-users img{
+    max-width: 100%;
+  }
+  
+  &__imagen-bottom-1,
+  &__imagen-bottom-2{
+    margin-top: -1px;
+  }
+
+  &__imagen-grow,
+  &__imagen-users{
+    background-color: $ligth-color;
+    margin-top: -8px;
+    padding-bottom: 3rem;
+  }
+
+  &__title-grow,
+  &__title-flowing,
+  &__title-users{
+    font-family: $main-title;
+    padding-top: 4rem;
+  }
+
+  &__title-grow{
+    background-color: $ligth-color;
+    margin-top: -2px;
+    padding-bottom: 1.5rem;
+  }
+  
+
+  &__text-grow{
+    margin-top: -21px;
+    background-color: $ligth-color;
+    font-weight: $font-semi-bold;
+  }
+
+  &__imagen-flowing{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  &__text-flowing{
+    font-weight: $font-regular;
+    padding: 0 .5rem;
+  }
+
+  &__text-users{
+    padding: 0 1rem;
+  }
+
+}
+
+.started{
+  text-align: center;
+  padding-bottom: 8rem;
+
+  .btn{
+    @include button;
+    background-color:$primary-color;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 230px;
+    color: white;
+    box-shadow: 0 2.5px 5px 0 $dark-color;
+  }
+
+}

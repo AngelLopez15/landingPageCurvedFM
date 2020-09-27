@@ -1,0 +1,47 @@
+.header{
+
+  .navbar{
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    &__logo{
+      height: 20px;
+    }
+
+    .btn{
+      @include button;
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      padding: .5rem 1.5rem;
+    }
+  }
+}
+
+.banner{
+  text-align: center;
+  padding: 30vmin 0;
+
+  &__title{
+    color:$dark-color;
+    font-family: $main-title;
+  }
+  
+  p{
+    font-weight: $font-regular;
+    padding: 0 1rem;
+  }
+
+  .btn{
+    @include button;
+    background-color:$primary-color;
+    border: none;
+    margin: 2.5rem;
+    padding: 1rem;
+    width: 230px;
+    color: white;
+    box-shadow: 0 2.5px 5px 0 $dark-color;
+  }
+}

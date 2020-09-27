@@ -1,0 +1,25 @@
+block footer
+  footer.footer
+    .footer__imgen-top
+      img(src="./images/bg-footer-top-mobile.svg", alt="background imagen")
+    section.footer__info
+      h2.footer__title Newsletter
+      p.footer__text To recieve tips on how to grow your community, sig up to our weekly newsletter. We´ll never send you spam or pass on your email address
+      form.footer__form-subscribe
+        //- label(for="email").footer__form-subscribe-label Email
+        input(type="email", name="email")#email.footer__form-subscribe-input
+        input(type="submit", name="sumbit", value="Subscribe").btn.footer__form-subscribe-submit
+      .footer__description
+        img(src="./images/logo.svg", alt="logo").footer__description-img
+        p.footer__description-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+      .footer__contact
+        ul.footer__contact-list
+          li 
+            img(src="./images/icon-phone.svg", alt="icono phone").icon 
+            | Phone: +1-543-123-4567
+          li 
+            img(src="./images/icon-email.svg", alt="icono email").icon 
+            | example@company.com
+        <i class="icon fab fa-facebook-square"></i>
+        <i class="icon fab fa-instagram"></i>
+        <i class="icon fab fa-twitter-square"></i>
